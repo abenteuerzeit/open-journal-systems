@@ -2158,7 +2158,7 @@ class X509
         $parts = parse_url($url);
         $data = '';
         switch ($parts['scheme']) {
-            case 'http':
+            case 'https':
                 $fsock = @fsockopen($parts['host'], isset($parts['port']) ? $parts['port'] : 80);
                 if (!$fsock) {
                     return false;

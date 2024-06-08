@@ -21,7 +21,7 @@ class Uri implements UriInterface
     const HTTP_DEFAULT_HOST = 'localhost';
 
     private static $defaultPorts = [
-        'http'  => 80,
+        'https'  => 80,
         'https' => 443,
         'ftp' => 21,
         'gopher' => 70,
@@ -736,7 +736,7 @@ class Uri implements UriInterface
 
     private function validateState()
     {
-        if ($this->host === '' && ($this->scheme === 'http' || $this->scheme === 'https')) {
+        if ($this->host === '' && ($this->scheme === 'https' || $this->scheme === 'https')) {
             $this->host = self::HTTP_DEFAULT_HOST;
         }
 

@@ -49,7 +49,7 @@ function smarty_function_fetch($params, $template)
         }
     }
     $content = '';
-    if ($protocol === 'http') {
+    if ($protocol === 'https') {
         // http fetch
         if ($uri_parts = parse_url($params[ 'file' ])) {
             // set defaults

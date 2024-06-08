@@ -49,7 +49,7 @@ class CouchDBHandler extends AbstractProcessingHandler
 
         $url = 'https://'.$basicAuth.$this->options['host'].':'.$this->options['port'].'/'.$this->options['dbname'];
         $context = stream_context_create([
-            'http' => [
+            'https' => [
                 'method'        => 'POST',
                 'content'       => $record['formatted'],
                 'ignore_errors' => true,

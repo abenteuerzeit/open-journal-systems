@@ -69,7 +69,7 @@ class GitHubChecker implements Checker
     public function fetchLatestRelease()
     {
         $context = \stream_context_create([
-            'http' => [
+            'https' => [
                 'user_agent' => 'PsySH/' . Shell::VERSION,
                 'timeout'    => 3,
             ],

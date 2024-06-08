@@ -381,7 +381,7 @@ class StreamHandler
         }
 
         $context = [
-            'http' => [
+            'https' => [
                 'method'           => $request->getMethod(),
                 'header'           => $headers,
                 'protocol_version' => $request->getProtocolVersion(),
@@ -393,14 +393,14 @@ class StreamHandler
         $body = (string) $request->getBody();
 
         if (!empty($body)) {
-            $context['http']['content'] = $body;
+            $context['https']['content'] = $body;
             // Prevent the HTTP handler from adding a Content-Type header.
             if (!$request->hasHeader('Content-Type')) {
-                $context['http']['header'] .= "Content-Type:\r\n";
+                $context['https']['header'] .= "Content-Type:\r\n";
             }
         }
 
-        $context['http']['header'] = rtrim($context['http']['header']);
+        $context['https']['header'] = rtrim($context['https']['header']);
 
         return $context;
     }
@@ -408,7 +408,7 @@ class StreamHandler
     private function add_proxy(RequestInterface $request, &$options, $value, &$params)
     {
         if (!is_array($value)) {
-            $options['http']['proxy'] = $value;
+            $options['https']['proxy'] = $value;
         } else {
             $scheme = $request->getUri()->getScheme();
             if (isset($value[$scheme])) {
@@ -418,7 +418,7 @@ class StreamHandler
                         $value['no']
                     )
                 ) {
-                    $options['http']['proxy'] = $value[$scheme];
+                    $options['https']['proxy'] = $value[$scheme];
                 }
             }
         }
@@ -427,7 +427,7 @@ class StreamHandler
     private function add_timeout(RequestInterface $request, &$options, $value, &$params)
     {
         if ($value > 0) {
-            $options['http']['timeout'] = $value;
+            $options['https']['timeout'] = $value;
         }
     }
 

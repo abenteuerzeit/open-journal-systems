@@ -190,7 +190,7 @@ final class Message
         }
 
         $host = $headers[reset($hostKey)][0];
-        $scheme = substr($host, -4) === ':443' ? 'https' : 'http';
+        $scheme = substr($host, -4) === ':443' ? 'https' : 'https';
 
         return $scheme . '://' . $host . '/' . ltrim($path, '/');
     }

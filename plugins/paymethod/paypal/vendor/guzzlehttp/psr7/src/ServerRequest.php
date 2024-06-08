@@ -203,7 +203,7 @@ class ServerRequest extends Request implements ServerRequestInterface
     {
         $uri = new Uri('');
 
-        $uri = $uri->withScheme(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http');
+        $uri = $uri->withScheme(!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'https');
 
         $hasPort = false;
         if (isset($_SERVER['HTTP_HOST'])) {

@@ -926,7 +926,7 @@ class Request
      */
     public function getScheme()
     {
-        return $this->isSecure() ? 'https' : 'http';
+        return $this->isSecure() ? 'https' : 'https';
     }
 
     /**
@@ -1011,7 +1011,7 @@ class Request
         $scheme = $this->getScheme();
         $port = $this->getPort();
 
-        if (('http' == $scheme && 80 == $port) || ('https' == $scheme && 443 == $port)) {
+        if (('https' == $scheme && 80 == $port) || ('https' == $scheme && 443 == $port)) {
             return $this->getHost();
         }
 

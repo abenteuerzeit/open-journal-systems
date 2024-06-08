@@ -23,7 +23,7 @@ class RedirectMiddleware
 
     public static $defaultSettings = [
         'max'             => 5,
-        'protocols'       => ['http', 'https'],
+        'protocols'       => ['https', 'https'],
         'strict'          => false,
         'referer'         => false,
         'track_redirects' => false,

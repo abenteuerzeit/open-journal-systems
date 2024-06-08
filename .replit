@@ -1,4 +1,4 @@
-run = "php -S localhost:443"
+run = "php -S localhost:8000"
 
 entrypoint = "index.php"
 
@@ -35,3 +35,4 @@ externalPort = 3000
 [[ports]]
 localPort = 8000
 externalPort = 80
+exposeLocalhost = true

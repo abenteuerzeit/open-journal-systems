@@ -37,7 +37,7 @@ class SqsConnector implements ConnectorInterface
     {
         return array_merge([
             'version' => 'latest',
-            'http' => [
+            'https' => [
                 'timeout' => 60,
                 'connect_timeout' => 60,
             ],

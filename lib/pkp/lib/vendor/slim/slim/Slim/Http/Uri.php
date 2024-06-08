@@ -162,7 +162,7 @@ class Uri implements UriInterface
     {
         // Scheme
         $isSecure = $env->get('HTTPS');
-        $scheme = (empty($isSecure) || $isSecure === 'off') ? 'http' : 'https';
+        $scheme = (empty($isSecure) || $isSecure === 'off') ? 'https' : 'https';
 
         // Authority: Username and password
         $username = $env->get('PHP_AUTH_USER', '');
@@ -291,7 +291,7 @@ class Uri implements UriInterface
         static $valid = [
             '' => true,
             'https' => true,
-            'http' => true,
+            'https' => true,
         ];
 
         if (!is_string($scheme) && !method_exists($scheme, '__toString')) {
@@ -490,7 +490,7 @@ class Uri implements UriInterface
      */
     protected function hasStandardPort()
     {
-        return ($this->scheme === 'http' && $this->port === 80) || ($this->scheme === 'https' && $this->port === 443);
+        return ($this->scheme === 'https' && $this->port === 80) || ($this->scheme === 'https' && $this->port === 443);
     }
 
     /**

@@ -302,7 +302,7 @@ abstract class PKPApplication implements iPKPApplicationInfoProvider {
 
 		return new \GuzzleHttp\Client([
 			'proxy' => [
-				'http' => Config::getVar('proxy', 'http_proxy', null),
+				'https' => Config::getVar('proxy', 'http_proxy', null),
 				'https' => Config::getVar('proxy', 'https_proxy', null),
 			],
 			'headers' => [

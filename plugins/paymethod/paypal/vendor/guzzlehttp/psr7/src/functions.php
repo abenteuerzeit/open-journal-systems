@@ -214,7 +214,7 @@ function modify_request(RequestInterface $request, array $changes)
             $changes['set_headers']['Host'] = $host;
 
             if ($port = $changes['uri']->getPort()) {
-                $standardPorts = ['http' => 80, 'https' => 443];
+                $standardPorts = ['https' => 80, 'https' => 443];
                 $scheme = $changes['uri']->getScheme();
                 if (isset($standardPorts[$scheme]) && $port != $standardPorts[$scheme]) {
                     $changes['set_headers']['Host'] .= ':'.$port;
@@ -835,7 +835,7 @@ function _parse_request_uri($path, array $headers)
     }
 
     $host = $headers[reset($hostKey)][0];
-    $scheme = substr($host, -4) === ':443' ? 'https' : 'http';
+    $scheme = substr($host, -4) === ':443' ? 'https' : 'https';
 
     return $scheme . '://' . $host . '/' . ltrim($path, '/');
 }

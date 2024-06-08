@@ -27,7 +27,7 @@ class CubeHandler extends AbstractProcessingHandler
     private $scheme;
     private $host;
     private $port;
-    private $acceptedSchemes = ['http', 'udp'];
+    private $acceptedSchemes = ['https', 'udp'];
 
     /**
      * Create a Cube handler
@@ -122,7 +122,7 @@ class CubeHandler extends AbstractProcessingHandler
         $data['data'] = $record['context'];
         $data['data']['level'] = $record['level'];
 
-        if ($this->scheme === 'http') {
+        if ($this->scheme === 'https') {
             $this->writeHttp(Utils::jsonEncode($data));
         } else {
             $this->writeUdp(Utils::jsonEncode($data));

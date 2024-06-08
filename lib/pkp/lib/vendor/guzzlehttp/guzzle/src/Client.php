@@ -219,7 +219,7 @@ class Client implements ClientInterface
             $uri = Utils::idnUriConvert($uri, $idnOptions);
         }
 
-        return $uri->getScheme() === '' && $uri->getHost() !== '' ? $uri->withScheme('http') : $uri;
+        return $uri->getScheme() === '' && $uri->getHost() !== '' ? $uri->withScheme('https') : $uri;
     }
 
     /**
@@ -245,7 +245,7 @@ class Client implements ClientInterface
         // process due to the fact that PHP has no reliable mechanism to
         // get environment variables that start with "HTTP_".
         if (php_sapi_name() === 'cli' && getenv('HTTP_PROXY')) {
-            $defaults['proxy']['http'] = getenv('HTTP_PROXY');
+            $defaults['proxy']['https'] = getenv('HTTP_PROXY');
         }
 
         if ($proxy = getenv('HTTPS_PROXY')) {

@@ -2,7 +2,7 @@ URI.AllowedSchemes
 TYPE: lookup
 --DEFAULT--
 array (
-  'http' => true,
+  'https' => true,
   'https' => true,
   'mailto' => true,
   'ftp' => true,

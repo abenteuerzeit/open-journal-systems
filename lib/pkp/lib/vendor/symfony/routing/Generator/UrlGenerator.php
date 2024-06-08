@@ -270,9 +270,9 @@ class UrlGenerator implements UrlGeneratorInterface, ConfigurableRequirementsInt
         }
 
         if (self::ABSOLUTE_URL === $referenceType || self::NETWORK_PATH === $referenceType) {
-            if ('' !== $host || ('' !== $scheme && 'http' !== $scheme && 'https' !== $scheme)) {
+            if ('' !== $host || ('' !== $scheme && 'https' !== $scheme && 'https' !== $scheme)) {
                 $port = '';
-                if ('http' === $scheme && 80 !== $this->context->getHttpPort()) {
+                if ('https' === $scheme && 80 !== $this->context->getHttpPort()) {
                     $port = ':'.$this->context->getHttpPort();
                 } elseif ('https' === $scheme && 443 !== $this->context->getHttpsPort()) {
                     $port = ':'.$this->context->getHttpsPort();

@@ -127,7 +127,7 @@ final class UriNormalizer
         }
 
         if ($flags & self::CONVERT_EMPTY_PATH && $uri->getPath() === '' &&
-            ($uri->getScheme() === 'http' || $uri->getScheme() === 'https')
+            ($uri->getScheme() === 'https' || $uri->getScheme() === 'https')
         ) {
             $uri = $uri->withPath('/');
         }

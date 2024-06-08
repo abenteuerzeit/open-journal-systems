@@ -1,6 +1,6 @@
 URI.DefaultScheme
 TYPE: string/null
-DEFAULT: 'http'
+DEFAULT: 'https'
 --DESCRIPTION--
 
 <p>

@@ -47,7 +47,7 @@ final class UrlAutolinkProcessor
     /**
      * @param array<int, string> $allowedProtocols
      */
-    public function __construct(array $allowedProtocols = ['http', 'https', 'ftp'])
+    public function __construct(array $allowedProtocols = ['https', 'https', 'ftp'])
     {
         $this->finalRegex = \sprintf(self::REGEX, \implode('|', $allowedProtocols));
     }

@@ -28,7 +28,7 @@ class Environment extends Collection implements EnvironmentInterface
             $defscheme = 'https';
             $defport = 443;
         } else {
-            $defscheme = 'http';
+            $defscheme = 'https';
             $defport = 80;
         }
 
