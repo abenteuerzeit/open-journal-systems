@@ -1,0 +1,82 @@
+240608 04:53:58 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-08  4:53:58 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 1145 ...
+2024-06-08  4:53:58 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/435fa2a0768e.err' (errno: 2 "No such file or directory")
+2024-06-08  4:53:58 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-08  4:53:58 0 [Note] InnoDB: Number of pools: 1
+2024-06-08  4:53:58 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-08  4:53:58 0 [Note] InnoDB: Using liburing
+2024-06-08  4:53:58 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-08  4:53:58 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-08  4:53:58 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1685671,1685671
+2024-06-08  4:53:58 0 [Note] InnoDB: Starting final batch to recover 17 pages from redo log.
+2024-06-08  4:53:58 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-08  4:53:58 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-08  4:53:58 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-08  4:53:58 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-08  4:53:58 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-08  4:53:58 0 [Note] InnoDB: 10.6.10 started; log sequence number 1912941; transaction id 3637
+2024-06-08  4:53:58 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-08  4:53:58 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-08  4:53:58 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-08  4:53:58 0 [Note] Server socket created on IP: '::'.
+2024-06-08  4:53:58 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-08  4:53:58 0 [Note] InnoDB: Buffer pool(s) load completed at 240608  4:53:58
+2024-06-08  4:53:59 3 [Warning] Aborted connection 3 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:53:59 4 [Warning] Aborted connection 4 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:53:59 5 [Warning] Aborted connection 5 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:53:59 6 [Warning] Aborted connection 6 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:00 7 [Warning] Aborted connection 7 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:00 8 [Warning] Aborted connection 8 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:00 9 [Warning] Aborted connection 9 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:00 10 [Warning] Aborted connection 10 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:02 11 [Warning] Aborted connection 11 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:02 12 [Warning] Aborted connection 12 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:02 13 [Warning] Aborted connection 13 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:02 14 [Warning] Aborted connection 14 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:03 15 [Warning] Aborted connection 15 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:03 16 [Warning] Aborted connection 16 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:03 17 [Warning] Aborted connection 17 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:54:03 18 [Warning] Aborted connection 18 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:03 37 [Warning] Aborted connection 37 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:03 38 [Warning] Aborted connection 38 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:03 39 [Warning] Aborted connection 39 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:03 40 [Warning] Aborted connection 40 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 41 [Warning] Aborted connection 41 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 42 [Warning] Aborted connection 42 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 43 [Warning] Aborted connection 43 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 44 [Warning] Aborted connection 44 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 46 [Warning] Aborted connection 46 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 47 [Warning] Aborted connection 47 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 48 [Warning] Aborted connection 48 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:55:49 49 [Warning] Aborted connection 49 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:04 52 [Warning] Aborted connection 52 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:04 53 [Warning] Aborted connection 53 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:04 54 [Warning] Aborted connection 54 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:04 55 [Warning] Aborted connection 55 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 56 [Warning] Aborted connection 56 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 57 [Warning] Aborted connection 57 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 58 [Warning] Aborted connection 58 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 59 [Warning] Aborted connection 59 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 61 [Warning] Aborted connection 61 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 62 [Warning] Aborted connection 62 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 63 [Warning] Aborted connection 63 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:31 64 [Warning] Aborted connection 64 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:50 65 [Warning] Aborted connection 65 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:50 66 [Warning] Aborted connection 66 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:50 67 [Warning] Aborted connection 67 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:56:50 68 [Warning] Aborted connection 68 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:05 69 [Warning] Aborted connection 69 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:05 70 [Warning] Aborted connection 70 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:05 71 [Warning] Aborted connection 71 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:05 72 [Warning] Aborted connection 72 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:32 73 [Warning] Aborted connection 73 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:32 74 [Warning] Aborted connection 74 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:32 75 [Warning] Aborted connection 75 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:32 76 [Warning] Aborted connection 76 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:52 77 [Warning] Aborted connection 77 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:52 78 [Warning] Aborted connection 78 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:52 79 [Warning] Aborted connection 79 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:52 80 [Warning] Aborted connection 80 to db: 'unconnected' user: 'unauthenticated' host: '435fa2a0768e' (This connection closed normally without authentication)
+2024-06-08  4:57:53 81 [Warning] Aborted connection 81 to db: 'unconnected' user: 'unau
