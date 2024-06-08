@@ -1,5 +1,9 @@
 # Open Journal Systems
 
+## Preview (Replit/NixOS)
+
+![ezgif-2-f39ed6ce66](https://github.com/abenteuerzeit/open-journal-systems/assets/98088666/426a6eda-a1dc-4ffe-8fa2-7a63a8543a6e)
+
 > Open Journal Systems (OJS) has been developed by the Public Knowledge Project. For general information about OJS and other open research systems, visit the [PKP web site][pkp].
 
 [![Build Status](https://app.travis-ci.com/pkp/ojs.svg?branch=stable-3_3_0)](https://app.travis-ci.com/pkp/ojs)
