@@ -752,27 +752,37 @@ class UsageStatsPlugin extends GenericPlugin {
 		// Get the current day filename.
 		$filename = $this->getUsageEventCurrentDayLogName();
 
+		// TODO:  bug: issues with file locking and directory creation might be related to the limitations or specific configurations of the Replit 
+		
 		// Check the plugin file directory.
-		$usageEventFilesPath = $this->getUsageEventLogsPath();
-		if (!$fileMgr->fileExists($usageEventFilesPath, 'dir')) {
-			$success = $fileMgr->mkdirtree($usageEventFilesPath);
-			if (!$success) {
-				// Files directory wrong configuration?
-				assert(false);
-				return false;
-			}
-		}
+		// $usageEventFilesPath = $this->getUsageEventLogsPath();
+		// if (!$fileMgr->fileExists($usageEventFilesPath, 'dir')) {
+		// 	$success = $fileMgr->mkdirtree($usageEventFilesPath);
+		// 	if (!$success) {
+		// 		// Files directory wrong configuration?
+		// 		assert(false);
+		// 		return false;
+		// 	}
+		// }
 
-		$filePath = $usageEventFilesPath . DIRECTORY_SEPARATOR . $filename;
-		$fp = fopen($filePath, 'ab');
-		if (flock($fp, LOCK_EX)) {
-			fwrite($fp, $usageLogEntry);
-			flock($fp, LOCK_UN);
-		} else {
-			// Couldn't lock the file.
-			assert(false);
-		}
-		fclose($fp);
+		// $filePath = $usageEventFilesPath . DIRECTORY_SEPARATOR . $filename;
+		// $fp = fopen($filePath, 'ab');
+		// if (flock($fp, LOCK_EX)) {
+		// 	fwrite($fp, $usageLogEntry);
+		// 	flock($fp, LOCK_UN);
+		// } else {
+		// 	// Couldn't lock the file.
+		// 	assert(false);
+		// }
+		// fclose($fp);
+
+		// Save the event in a temporary file for inspection instead
+		$tempFile = '/tmp/usage_stats_dump.txt';
+		$currentEvents = print_r($this->_currentUsageEvent, true);
+		file_put_contents($tempFile, $currentEvents, FILE_APPEND);
+
+		// Clear the current usage event
+		$this->_currentUsageEvent = null;
 	}
 
 	/**
@@ -939,4 +949,3 @@ class UsageStatsPlugin extends GenericPlugin {
 	}
 
 }
-
