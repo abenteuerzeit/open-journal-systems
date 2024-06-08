@@ -1,0 +1,81 @@
+240608 02:14:04 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-08  2:14:04 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 560 ...
+2024-06-08  2:14:04 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/dfe8895f9999.err' (errno: 2 "No such file or directory")
+2024-06-08  2:14:04 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-08  2:14:04 0 [Note] InnoDB: Number of pools: 1
+2024-06-08  2:14:04 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-08  2:14:04 0 [Note] InnoDB: Using liburing
+2024-06-08  2:14:04 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-08  2:14:04 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-08  2:14:04 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1685671,1685671
+2024-06-08  2:14:05 0 [Note] InnoDB: Starting final batch to recover 10 pages from redo log.
+2024-06-08  2:14:05 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-08  2:14:05 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-08  2:14:05 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-08  2:14:05 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-08  2:14:05 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-08  2:14:05 0 [Note] InnoDB: 10.6.10 started; log sequence number 1715441; transaction id 2823
+2024-06-08  2:14:05 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-08  2:14:05 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-08  2:14:05 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-08  2:14:05 0 [Note] Server socket created on IP: '::'.
+2024-06-08  2:14:05 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-08  2:14:05 0 [Note] InnoDB: Buffer pool(s) load completed at 240608  2:14:05
+2024-06-08  2:23:22 21 [Warning] Aborted connection 21 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 22 [Warning] Aborted connection 22 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 23 [Warning] Aborted connection 23 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 24 [Warning] Aborted connection 24 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 25 [Warning] Aborted connection 25 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 26 [Warning] Aborted connection 26 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 27 [Warning] Aborted connection 27 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 28 [Warning] Aborted connection 28 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 29 [Warning] Aborted connection 29 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 30 [Warning] Aborted connection 30 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 31 [Warning] Aborted connection 31 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 32 [Warning] Aborted connection 32 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 33 [Warning] Aborted connection 33 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 34 [Warning] Aborted connection 34 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 35 [Warning] Aborted connection 35 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:23:22 36 [Warning] Aborted connection 36 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:27 179 [Warning] Aborted connection 179 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:27 180 [Warning] Aborted connection 180 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:27 181 [Warning] Aborted connection 181 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:27 182 [Warning] Aborted connection 182 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 183 [Warning] Aborted connection 183 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 184 [Warning] Aborted connection 184 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 185 [Warning] Aborted connection 185 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 186 [Warning] Aborted connection 186 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 187 [Warning] Aborted connection 187 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 188 [Warning] Aborted connection 188 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 189 [Warning] Aborted connection 189 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 190 [Warning] Aborted connection 190 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 191 [Warning] Aborted connection 191 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 192 [Warning] Aborted connection 192 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 193 [Warning] Aborted connection 193 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:24:28 194 [Warning] Aborted connection 194 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 304 [Warning] Aborted connection 304 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 305 [Warning] Aborted connection 305 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 306 [Warning] Aborted connection 306 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 307 [Warning] Aborted connection 307 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 308 [Warning] Aborted connection 308 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 309 [Warning] Aborted connection 309 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 310 [Warning] Aborted connection 310 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:25:09 311 [Warning] Aborted connection 311 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 314 [Warning] Aborted connection 314 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 315 [Warning] Aborted connection 315 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 316 [Warning] Aborted connection 316 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 317 [Warning] Aborted connection 317 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 318 [Warning] Aborted connection 318 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 319 [Warning] Aborted connection 319 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 320 [Warning] Aborted connection 320 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:46 321 [Warning] Aborted connection 321 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 322 [Warning] Aborted connection 322 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 323 [Warning] Aborted connection 323 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 324 [Warning] Aborted connection 324 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 325 [Warning] Aborted connection 325 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 326 [Warning] Aborted connection 326 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 327 [Warning] Aborted connection 327 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 328 [Warning] Aborted connection 328 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentication)
+2024-06-08  2:27:48 329 [Warning] Aborted connection 329 to db: 'unconnected' user: 'unauthenticated' host: 'dfe8895f9999' (This connection closed normally without authentica

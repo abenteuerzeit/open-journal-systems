@@ -1,0 +1,70 @@
+240608 01:41:54 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-08  1:41:54 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 191 ...
+2024-06-08  1:41:54 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/5e30ff4f88d7.err' (errno: 2 "No such file or directory")
+2024-06-08  1:41:54 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-08  1:41:54 0 [Note] InnoDB: Number of pools: 1
+2024-06-08  1:41:54 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-08  1:41:54 0 [Note] InnoDB: Using liburing
+2024-06-08  1:41:54 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-08  1:41:54 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-08  1:41:54 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1684502,1684502
+2024-06-08  1:41:54 0 [Note] InnoDB: Starting final batch to recover 2 pages from redo log.
+2024-06-08  1:41:54 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-08  1:41:54 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-08  1:41:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-08  1:41:54 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-08  1:41:54 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-08  1:41:54 0 [Note] InnoDB: 10.6.10 started; log sequence number 1685599; transaction id 2709
+2024-06-08  1:41:54 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-08  1:41:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-08  1:41:54 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-08  1:41:54 0 [Note] Server socket created on IP: '::'.
+2024-06-08  1:41:54 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-08  1:41:54 0 [Note] InnoDB: Buffer pool(s) load completed at 240608  1:41:54
+2024-06-08  1:42:11 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
+2024-06-08  1:42:11 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-06-08  1:42:11 0 [Note] InnoDB: Starting shutdown...
+2024-06-08  1:42:11 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-08  1:42:11 0 [Note] InnoDB: Buffer pool(s) dump completed at 240608  1:42:11
+2024-06-08  1:42:11 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-08  1:42:11 0 [Note] InnoDB: Shutdown completed; log sequence number 1685671; transaction id 2710
+2024-06-08  1:42:11 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
+
+240608 01:42:11 mysqld_safe mysqld from pid file ./mysql_data/5e30ff4f88d7.pid ended
+240608 01:42:28 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-08  1:42:28 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 395 ...
+2024-06-08  1:42:28 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/5e30ff4f88d7.err' (errno: 2 "No such file or directory")
+2024-06-08  1:42:28 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-08  1:42:28 0 [Note] InnoDB: Number of pools: 1
+2024-06-08  1:42:28 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-08  1:42:28 0 [Note] InnoDB: Using liburing
+2024-06-08  1:42:28 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-08  1:42:28 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-08  1:42:29 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-08  1:42:29 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-08  1:42:29 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-08  1:42:29 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-08  1:42:29 0 [Note] InnoDB: 10.6.10 started; log sequence number 1685671; transaction id 2709
+2024-06-08  1:42:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-08  1:42:29 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-08  1:42:29 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-08  1:42:29 0 [Note] Server socket created on IP: '::'.
+2024-06-08  1:42:29 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-08  1:42:29 0 [Note] InnoDB: Buffer pool(s) load completed at 240608  1:42:29
+2024-06-08  1:47:57 5 [Warning] Aborted connection 5 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:57 6 [Warning] Aborted connection 6 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:57 7 [Warning] Aborted connection 7 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:57 8 [Warning] Aborted connection 8 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:58 9 [Warning] Aborted connection 9 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:58 10 [Warning] Aborted connection 10 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:58 11 [Warning] Aborted connection 11 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:47:58 12 [Warning] Aborted connection 12 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:48:21 14 [Warning] Aborted connection 14 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:48:21 15 [Warning] Aborted connection 15 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:48:21 16 [Warning] Aborted connection 16 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+2024-06-08  1:48:21 17 [Warning] Aborted connection 17 to db: 'unconnected' user: 'unauthenticated' host: '5e30ff4f88d7' (This connection closed normally without authentication)
+20

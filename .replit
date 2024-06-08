@@ -1,0 +1,37 @@
+run = "php -S localhost:443"
+
+entrypoint = "index.php"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = [
+    "sudo",
+    "mysqld_safe",
+    "--datadir=./mysql_data",
+    "&&",
+    "php",
+    "-S",
+    "0.0.0.0:8000",
+    "-t",
+]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 80
+externalPort = 3001
+exposeLocalhost = true
+
+[[ports]]
+localPort = 443
+externalPort = 3002
+exposeLocalhost = true
+
+[[ports]]
+localPort = 3306
+externalPort = 3000
+
+[[ports]]
+localPort = 8000
+externalPort = 80

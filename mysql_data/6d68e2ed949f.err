@@ -1,0 +1,36 @@
+240608 03:52:46 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-08  3:52:46 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 216 ...
+2024-06-08  3:52:46 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/6d68e2ed949f.err' (errno: 2 "No such file or directory")
+2024-06-08  3:52:46 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-08  3:52:46 0 [Note] InnoDB: Number of pools: 1
+2024-06-08  3:52:46 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-08  3:52:46 0 [Note] InnoDB: Using liburing
+2024-06-08  3:52:46 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-08  3:52:46 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-08  3:52:46 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=1685671,1685671
+2024-06-08  3:52:47 0 [Note] InnoDB: Starting final batch to recover 17 pages from redo log.
+2024-06-08  3:52:47 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-08  3:52:47 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-08  3:52:47 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-08  3:52:47 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-08  3:52:47 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-08  3:52:47 0 [Note] InnoDB: 10.6.10 started; log sequence number 1890539; transaction id 3522
+2024-06-08  3:52:47 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-08  3:52:47 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-08  3:52:47 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-08  3:52:47 0 [Note] Server socket created on IP: '::'.
+2024-06-08  3:52:47 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-08  3:52:47 0 [Note] InnoDB: Buffer pool(s) load completed at 240608  3:52:47
+2024-06-08  3:52:48 3 [Warning] Aborted connection 3 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 4 [Warning] Aborted connection 4 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 5 [Warning] Aborted connection 5 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 6 [Warning] Aborted connection 6 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 7 [Warning] Aborted connection 7 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 8 [Warning] Aborted connection 8 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 9 [Warning] Aborted connection 9 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:48 10 [Warning] Aborted connection 10 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:55 11 [Warning] Aborted connection 11 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:55 12 [Warning] Aborted connection 12 to db: 'unconnected' user: 'unauthenticated' host: '6d68e2ed949f' (This connection closed normally without authentication)
+2024-06-08  3:52:55 13 [Warning] Aborted connection 13 to db: 'unconnected' user: 'u
