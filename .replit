@@ -1,5 +1,4 @@
-run = "php -S localhost:8000"
-
+run = "php -S localhost:8000 & mysqld_safe --datadir=./mysql_data"
 entrypoint = "index.php"
 
 [nix]

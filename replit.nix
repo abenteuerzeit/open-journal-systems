@@ -4,8 +4,8 @@
    pkgs.nano
    pkgs.systemd
    pkgs.vim
-		pkgs.php82
-		pkgs.apacheHttpd
-		pkgs.mysql
+     pkgs.php82
+	pkgs.apacheHttpd
+	pkgs.mysql
   ];
 }
