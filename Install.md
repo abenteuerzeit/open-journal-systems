@@ -1,5 +1,21 @@
 # Open Journal Systems
 
+## Gitmoji
+
+[System dependencies](https://docs.replit.com/replit-workspace/add-system-dependencies)
+
+Install with
+
+```shell
+nix profile install nixpkgs#gitmoji-cli
+```
+
+commmits
+
+```shell
+gitmoji -c
+```
+
 ## How to Install 
 
 Download package release version
