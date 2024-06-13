@@ -1,0 +1,1312 @@
+diff --git a/httpd.conf b/httpd.conf
+index 1e1f261e..06494500 100644
+--- a/httpd.conf
++++ b/httpd.conf
+@@ -9,6 +9,11 @@ DocumentRoot "/home/runner/OpenJournalSystems"
+     Require all granted
+ </Directory>
+ 
++# Restrict access to the /home/runner/files directory
++<Directory "/home/runner/files">
++    Require all denied
++</Directory>
++
+ # Redirect HTTP to HTTPS for the specific domain
+ <VirtualHost *:80>
+     ServerName 426df5c4-8411-4697-99ee-e70ea4c99f87-00-1s452e04vm4sl.janeway.replit.dev
+@@ -23,5 +28,10 @@ DocumentRoot "/home/runner/OpenJournalSystems"
+     SSLCertificateFile /home/runner/ssl_certificates/server.crt
+     SSLCertificateKeyFile /home/runner/ssl_certificates/server.key
+ 
++    # Restrict access to the /home/runner/files directory
++    <Directory "/home/runner/files">
++        Require all denied
++    </Directory>
++
+     # Your PHP configuration and other directives go here
+ </VirtualHost>
+diff --git a/mysql_data/9c0012a62a56.err b/mysql_data/9c0012a62a56.err
+index 5a3d5303..5f112606 100644
+--- a/mysql_data/9c0012a62a56.err
++++ b/mysql_data/9c0012a62a56.err
+@@ -34,3 +34,34 @@ Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  Maria
+ 
+ 240608 11:51:12 mysqld_safe mysqld from pid file ./mysql_data/9c0012a62a56.pid ended
+ 240608 11:52:26 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
++2024-06-08 11:52:26 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 597 ...
++2024-06-08 11:52:26 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
++/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/9c0012a62a56.err' (errno: 2 "No such file or directory")
++2024-06-08 11:52:26 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
++2024-06-08 11:52:26 0 [Note] InnoDB: Number of pools: 1
++2024-06-08 11:52:26 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
++2024-06-08 11:52:26 0 [Note] InnoDB: Using liburing
++2024-06-08 11:52:26 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
++2024-06-08 11:52:26 0 [Note] InnoDB: Completed initialization of buffer pool
++2024-06-08 11:52:27 0 [Note] InnoDB: 128 rollback segments are active.
++2024-06-08 11:52:27 0 [Note] InnoDB: Creating shared tablespace for temporary tables
++2024-06-08 11:52:27 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
++2024-06-08 11:52:27 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
++2024-06-08 11:52:27 0 [Note] InnoDB: 10.6.10 started; log sequence number 2493740; transaction id 7609
++2024-06-08 11:52:27 0 [Note] Plugin 'FEEDBACK' is disabled.
++2024-06-08 11:52:27 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
++2024-06-08 11:52:27 0 [Note] Server socket created on IP: '0.0.0.0'.
++2024-06-08 11:52:27 0 [Note] Server socket created on IP: '::'.
++2024-06-08 11:52:27 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
++Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
++2024-06-08 11:52:27 0 [Note] InnoDB: Buffer pool(s) load completed at 240608 11:52:27
++2024-06-08 12:08:35 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
++2024-06-08 12:08:35 0 [Note] InnoDB: FTS optimize thread exiting.
++2024-06-08 12:08:35 0 [Note] InnoDB: Starting shutdown...
++2024-06-08 12:08:35 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
++2024-06-08 12:08:35 0 [Note] InnoDB: Buffer pool(s) dump completed at 240608 12:08:34
++2024-06-08 12:08:35 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
++2024-06-08 12:08:35 0 [Note] InnoDB: Shutdown completed; log sequence number 2496969; transaction id 7639
++2024-06-08 12:08:35 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
++
++240608 12:08:35 mysqld_safe mysqld from pid file ./mysql_data/9c0012a62a56.pid ended
+diff --git a/mysql_data/9c0012a62a56.pid b/mysql_data/9c0012a62a56.pid
+deleted file mode 100644
+index c41b47a3..00000000
+--- a/mysql_data/9c0012a62a56.pid
++++ /dev/null
+@@ -1 +0,0 @@
+-597
+diff --git a/mysql_data/aria_log.00000001 b/mysql_data/aria_log.00000001
+index ebc0eb65..9b01ce9b 100644
+Binary files a/mysql_data/aria_log.00000001 and b/mysql_data/aria_log.00000001 differ
+diff --git a/mysql_data/aria_log_control b/mysql_data/aria_log_control
+index 19c7dbad..8591c320 100644
+Binary files a/mysql_data/aria_log_control and b/mysql_data/aria_log_control differ
+diff --git a/mysql_data/ddl_recovery.log b/mysql_data/ddl_recovery.log
+deleted file mode 100644
+index 5e30b6d2..00000000
+Binary files a/mysql_data/ddl_recovery.log and /dev/null differ
+diff --git a/mysql_data/ib_buffer_pool b/mysql_data/ib_buffer_pool
+index 55a7b10e..426c34f7 100644
+--- a/mysql_data/ib_buffer_pool
++++ b/mysql_data/ib_buffer_pool
+@@ -1,7 +1,77 @@
++0,458
++0,457
++25,8
++25,7
++25,6
++25,5
++25,4
++25,3
++25,2
++25,1
++25,0
++23,5
++23,4
++23,3
++23,2
++23,1
++23,0
++21,5
++21,4
++21,3
++21,2
++21,1
++21,0
++20,3
++20,2
++20,1
++20,0
++19,3
++19,2
++19,1
++19,0
++17,3
++17,2
++17,1
++17,0
++16,4
++16,3
++16,2
++16,1
++16,0
++15,3
++15,2
++15,1
++15,0
++13,3
++13,2
++13,1
++13,0
++11,5
++11,4
++11,3
++11,2
++11,1
++11,0
++10,4
++10,3
++10,2
++10,1
++10,0
++8,4
++8,3
++8,2
++8,1
++8,0
++7,4
++7,3
++7,2
++7,1
++7,0
++5,4
++5,3
+ 5,2
+ 5,1
+ 5,0
+-4,3
+ 4,2
+ 4,1
+ 4,0
+@@ -12,92 +82,41 @@
+ 3,2
+ 3,1
+ 3,0
++2,22
+ 2,21
+-2,19
++2,20
++2,18
++2,17
+ 2,15
++2,14
+ 2,13
++2,12
++2,11
++2,10
+ 2,7
+-2,3
+ 2,2
++2,19
++2,3
++4,3
+ 2,1
+ 2,0
++1,3
+ 1,2
+ 1,1
+ 1,0
+-0,428
+-0,409
+-25,1
+-142,4
+-142,3
+-140,4
+-140,3
+-139,4
+-139,3
+-137,4
+-137,3
+-108,6
+-108,5
+-108,4
+-108,3
+-106,5
+-106,4
+-106,3
+-104,3
+-102,6
+-102,5
+-102,4
+-102,3
+-76,3
+-75,4
+-75,3
+-73,3
+-72,3
+-50,4
+-50,3
+-48,3
+-41,4
+-41,3
+-40,4
+-40,3
+-28,4
+-28,3
+-27,7
+-27,6
+-27,5
+-27,4
+-27,3
+-25,9
+-25,8
+-25,7
+-25,6
+-25,5
+-25,4
+-25,3
+-25,2
+-25,0
+-21,3
+-16,4
+-16,3
+-2,22
+-2,20
+-2,18
+-2,17
+-2,14
+-2,12
+-2,11
+-2,10
+-1,3
+ 0,453
+ 0,452
+ 0,443
+ 0,441
+-0,440
++0,428
+ 0,412
++0,409
+ 0,324
+ 0,243
+ 0,9
+ 0,0
+ 0,1
++0,440
+ 0,416
+ 0,300
+ 0,396
+@@ -154,559 +173,541 @@
+ 0,274
+ 0,413
+ 0,273
+-0,378
+-0,272
+-0,433
+-0,271
+-0,377
+-0,270
+-0,376
+-5,3
+-5,4
+-7,1
+-7,2
+-7,4
+-8,0
+-8,2
+-8,4
+-10,0
+-10,2
+-10,3
+-11,0
+-11,2
+-11,3
+-11,5
+-13,0
+-13,2
+-13,3
+-15,1
+-15,3
+-16,0
+-16,2
+-17,0
+-17,2
+-19,0
+-19,1
+-19,3
+-20,0
+-20,2
+-20,3
+-21,1
+-21,4
+-21,5
+-23,1
+-23,2
+-23,4
++25,9
+ 26,0
+-26,1
++26,2
+ 26,3
+-26,4
++27,0
+ 27,1
+-27,2
++27,3
++27,5
++27,6
++28,0
+ 28,1
++28,3
+ 29,0
+ 29,1
+ 29,3
+ 30,0
+ 30,2
+-30,4
++30,3
+ 31,0
+ 31,2
+ 31,3
+ 33,0
+-33,2
++33,1
+ 33,3
+ 33,5
+ 33,6
+ 33,8
+ 33,9
+ 34,1
+-34,3
++34,2
+ 34,4
+ 36,1
+ 36,2
+ 36,4
+-38,1
++38,0
+ 38,2
+ 40,0
+ 40,1
+-41,0
++40,3
++40,4
+ 41,1
+-42,0
++41,2
++41,4
++42,1
+ 42,2
+-42,3
++42,4
+ 44,0
+-44,1
+-44,3
++44,2
++44,4
+ 46,0
+-46,1
++46,2
+ 46,3
+-47,0
+-47,2
++47,1
+ 47,3
+-48,1
+-50,0
++48,0
++48,2
++48,3
+ 50,1
+-51,0
++50,2
++50,4
+ 51,1
+-51,3
++51,2
++51,4
+ 52,0
+-52,1
+-52,3
++52,2
+ 52,4
+-54,0
++52,5
++54,1
+ 54,2
+-54,3
++54,4
+ 55,0
+-55,1
+-55,3
++55,2
+ 55,4
+-57,1
++57,0
++57,2
+ 57,3
+-57,4
+-58,0
++57,5
+ 58,1
+-58,3
++58,2
++58,4
+ 60,0
+-60,1
++60,2
+ 60,3
+-61,0
+-61,2
++61,1
+ 61,3
+-61,5
++61,4
++63,0
+ 63,1
+-63,2
+-63,4
++63,3
+ 64,0
+-64,2
++64,1
++64,3
+ 64,4
+-66,0
+-66,2
++66,1
+ 66,3
+-67,0
++66,4
+ 67,1
+-67,3
++67,2
++67,4
+ 68,0
+-68,1
+-68,3
++68,2
+ 70,0
+-70,2
++70,1
++70,3
+ 70,4
+-71,0
+-71,2
++71,1
+ 71,3
+-71,5
++71,4
+ 71,6
+-72,0
++71,7
++72,1
+ 72,2
+ 73,0
+ 73,2
+-75,0
++73,3
++75,1
+ 75,2
++75,4
+ 76,1
+ 76,2
++78,0
+ 78,1
+-78,2
++78,3
+ 78,4
+ 79,1
+-79,2
++79,3
+ 79,4
+-80,0
++80,1
+ 80,2
+-80,3
+-82,1
++82,0
++82,2
+ 82,3
+-82,4
++83,0
+ 83,1
+-83,2
++83,3
+ 83,4
+ 85,1
+-85,2
++85,3
+ 85,4
+-86,0
++86,1
+ 86,2
+-86,3
+-88,0
++86,4
++88,1
+ 88,2
+-88,3
++88,4
+ 88,5
+-88,6
+-90,1
++90,0
++90,2
+ 90,3
+-90,4
++93,0
+ 93,1
+-93,2
++93,3
+ 93,4
+-93,5
+-94,1
++94,0
++94,2
+ 94,3
+-94,4
++94,5
+ 94,6
+-94,7
+-95,1
++95,0
++95,2
+ 95,3
+-95,4
++95,5
+ 98,0
+-98,1
++98,2
+ 98,3
+ 98,5
+-101,0
++101,1
+ 101,2
+-101,3
++101,4
+ 101,5
+-102,0
+-102,2
+-104,1
++102,1
++102,3
++102,4
++102,6
++104,0
+ 104,2
++104,3
+ 106,1
+-106,2
++106,3
++106,4
++108,0
+ 108,1
+-109,0
++108,3
++108,5
++108,6
+ 109,1
+-109,3
++109,2
+ 109,4
+ 109,6
+ 109,7
+ 111,1
+-111,3
++111,2
+ 112,0
+-112,2
++112,1
+ 112,3
+ 112,5
+-114,1
++114,0
+ 114,2
+-114,4
++114,3
+ 116,0
+ 116,2
+ 116,3
+ 116,5
+-117,1
++117,0
+ 117,2
+-117,4
++117,3
+ 119,0
+ 119,2
+-119,4
++119,3
+ 120,0
+-120,2
++120,1
+ 120,3
+ 120,5
+ 121,0
+ 121,2
+-121,4
++121,3
+ 123,0
+-123,2
++123,1
+ 123,3
+ 123,5
+-124,0
++123,6
+ 124,1
+-124,3
++124,2
+ 124,4
+ 126,1
+-126,3
++126,2
+ 127,0
+-127,2
++127,1
+ 127,3
+-128,0
++127,4
+ 128,1
+ 128,3
+-130,0
++128,4
+ 130,1
+-130,3
++130,2
+ 130,4
+ 131,1
+-131,3
++131,2
+ 131,4
+-132,1
++132,0
+ 132,2
+ 132,4
+ 134,0
+ 134,2
+-134,4
++134,3
+ 135,0
+-135,2
++135,1
+ 135,3
+ 136,0
+-136,2
++136,1
+ 136,3
+-137,0
++136,4
+ 137,1
+-139,0
++137,3
++137,4
+ 139,1
++139,2
++139,4
+ 140,0
+ 140,2
++140,4
+ 142,0
+ 142,2
++142,3
+ 143,0
+ 143,2
+-143,4
++143,3
+ 143,5
+-145,1
++145,0
+ 145,2
+-145,4
+-146,0
++145,3
++145,5
+ 146,1
+-146,3
++146,2
+ 146,4
+-148,0
++146,5
+ 148,1
+ 148,3
+-149,0
++148,4
+ 149,1
+-149,3
++149,2
+ 149,4
+ 151,1
+-151,3
++151,2
+ 153,0
+-153,2
++153,1
+ 153,3
+-154,1
++154,0
+ 154,2
+ 154,4
+-155,0
++154,5
+ 155,1
+-155,3
++155,2
+ 155,4
+ 155,6
+-157,1
++157,0
+ 157,2
+-157,4
++157,3
+ 157,5
+-159,0
++157,6
+ 159,1
+ 159,3
+-159,5
++159,4
+ 160,0
+-160,2
++160,1
+ 160,3
+ 162,1
+-162,3
++162,2
+ 162,4
+-163,1
++163,0
+ 163,2
+-164,0
+-164,2
++163,3
++164,1
+ 164,3
+-164,5
++164,4
+ 165,0
+-165,2
++165,1
+ 165,3
+ 165,5
+-166,0
++165,6
+ 166,1
+-166,3
++166,2
+ 167,0
+ 167,2
+-168,0
++167,3
+ 168,1
+-168,3
++168,2
+ 169,0
+-169,2
++169,1
+ 169,3
+ 171,1
+-171,3
+-171,4
+ 171,2
++171,4
++171,3
+ 171,0
+-169,1
+-168,2
+-167,3
++169,2
++168,3
++168,0
+ 167,1
+-166,2
+-165,6
++166,3
++166,0
+ 165,4
+-165,1
+-164,4
+-164,1
+-163,3
+-163,0
+-162,2
++165,2
++164,5
++164,2
++164,0
++163,1
++162,3
+ 162,0
+-160,1
+-159,4
+-159,2
+-157,6
+-157,3
+-157,0
++160,2
++159,5
++159,2
++159,0
++157,4
++157,1
+ 155,5
+-155,2
+-154,5
++155,3
++155,0
+ 154,3
+-154,0
+-153,1
+-151,2
++154,1
++153,2
++151,3
+ 151,0
+-149,2
+-148,4
++149,3
++149,0
+ 148,2
+-146,5
+-146,2
+-145,5
+-145,3
+-145,0
+-143,3
++148,0
++146,3
++146,0
++145,4
++145,1
++143,4
+ 143,1
++142,4
+ 142,1
++140,3
+ 140,1
+-139,2
++139,3
++139,0
+ 137,2
+-136,4
+-136,1
++137,0
++136,2
+ 135,4
+-135,1
+-134,3
++135,2
++134,4
+ 134,1
+ 132,3
+-132,0
+-131,2
++132,1
++131,3
+ 131,0
+-130,2
+-128,4
++130,3
++130,0
+ 128,2
+-127,4
+-127,1
+-126,2
++128,0
++127,2
++126,3
+ 126,0
+-124,2
+-123,6
++124,3
++124,0
+ 123,4
+-123,1
+-121,3
++123,2
++121,4
+ 121,1
+ 120,4
+-120,1
+-119,3
++120,2
++119,4
+ 119,1
+-117,3
+-117,0
++117,4
++117,1
+ 116,4
+ 116,1
+-114,3
+-114,0
++114,4
++114,1
+ 112,4
+-112,1
+-111,2
++112,2
++111,3
+ 111,0
+ 109,5
+-109,2
++109,3
++109,0
++108,4
+ 108,2
+-108,0
++106,5
++106,2
+ 106,0
+-104,0
+-102,1
+-101,4
+-101,1
++104,1
++102,5
++102,2
++102,0
++101,3
++101,0
+ 98,4
+-98,2
+-95,5
+-95,2
+-95,0
+-94,5
+-94,2
+-94,0
+-93,3
+-93,0
+-90,2
+-90,0
+-88,4
+-88,1
+-86,4
+-86,1
+-85,3
++98,1
++95,4
++95,1
++94,7
++94,4
++94,1
++93,5
++93,2
++90,4
++90,1
++88,6
++88,3
++88,0
++86,3
++86,0
++85,2
+ 85,0
+-83,3
+-83,0
+-82,2
+-82,0
+-80,1
+-79,3
++83,2
++82,4
++82,1
++80,3
++80,0
++79,2
+ 79,0
+-78,3
+-78,0
++78,2
++76,3
+ 76,0
+-75,1
++75,3
++75,0
+ 73,1
+-72,1
+-71,7
+-71,4
+-71,1
+-70,3
+-70,1
+-68,2
+-67,4
+-67,2
+-66,4
+-66,1
+-64,3
+-64,1
+-63,3
+-63,0
+-61,4
+-61,1
+-60,2
+-58,4
+-58,2
+-57,5
+-57,2
+-57,0
+-55,2
+-54,4
+-54,1
+-52,5
+-52,2
+-51,4
+-51,2
+-50,2
+-48,2
+-48,0
+-47,1
+-46,2
+-44,4
+-44,2
+-42,4
+-42,1
+-41,2
++72,3
++72,0
++71,5
++71,2
++71,0
++70,2
++68,3
++68,1
++67,3
++67,0
++66,2
++66,0
++64,2
++63,4
++63,2
++61,5
++61,2
++61,0
++60,1
++58,3
++58,0
++57,4
++57,1
++55,3
++55,1
++54,3
++54,0
++52,3
++52,1
++51,3
++51,0
++50,3
++50,0
++48,1
++47,2
++47,0
++46,1
++44,3
++44,1
++42,3
++42,0
++41,3
++41,0
+ 40,2
+ 38,3
+-38,0
++38,1
+ 36,3
+ 36,0
+-34,2
++34,3
+ 34,0
+ 33,7
+ 33,4
+-33,1
++33,2
+ 31,4
+ 31,1
+-30,3
++30,4
+ 30,1
+ 29,2
++28,4
+ 28,2
+-28,0
+-27,0
+-26,2
+-23,5
+-23,3
+-23,0
+-21,2
+-21,0
+-20,1
+-19,2
+-17,3
+-17,1
+-16,1
+-15,2
+-15,0
+-13,1
+-11,4
+-11,1
+-10,4
+-10,1
+-8,3
+-8,1
+-7,3
+-7,0
++27,7
++27,4
++27,2
++26,4
++26,1
++0,378
++0,272
++0,433
++0,271
++0,377
++0,270
++0,376
+ 0,269
+-0,375
+ 0,268
+ 0,374
+ 0,267
+@@ -749,8 +750,8 @@
+ 0,248
+ 0,360
+ 0,247
++0,454
+ 0,246
+-0,358
+ 0,245
+ 0,357
+ 0,244
+@@ -772,7 +773,6 @@
+ 0,235
+ 0,351
+ 0,234
+-0,405
+ 0,233
+ 0,350
+ 0,232
+@@ -802,7 +802,6 @@
+ 0,220
+ 0,401
+ 0,219
+-0,340
+ 0,218
+ 0,347
+ 0,217
+@@ -822,7 +821,6 @@
+ 0,210
+ 0,424
+ 0,209
+-0,333
+ 0,208
+ 0,399
+ 0,207
+@@ -830,7 +828,6 @@
+ 0,206
+ 0,331
+ 0,205
+-0,398
+ 0,204
+ 0,330
+ 0,203
+@@ -860,13 +857,11 @@
+ 0,63
+ 0,421
+ 0,62
+-0,319
+ 0,61
+ 0,420
+ 0,60
+-0,318
+ 0,59
+-0,317
++0,455
+ 0,58
+ 0,419
+ 0,57
+@@ -888,7 +883,7 @@
+ 0,49
+ 0,310
+ 0,48
+-0,309
++0,456
+ 0,47
+ 0,308
+ 0,46
+diff --git a/mysql_data/ib_logfile0 b/mysql_data/ib_logfile0
+index a9d243ed..23861816 100644
+Binary files a/mysql_data/ib_logfile0 and b/mysql_data/ib_logfile0 differ
+diff --git a/mysql_data/ibdata1 b/mysql_data/ibdata1
+index 0b3f88c5..f9acbc3d 100644
+Binary files a/mysql_data/ibdata1 and b/mysql_data/ibdata1 differ
+diff --git a/mysql_data/mysql/innodb_index_stats.ibd b/mysql_data/mysql/innodb_index_stats.ibd
+index 4e09d943..9f37aed2 100644
+Binary files a/mysql_data/mysql/innodb_index_stats.ibd and b/mysql_data/mysql/innodb_index_stats.ibd differ
+diff --git a/mysql_data/mysql/innodb_table_stats.ibd b/mysql_data/mysql/innodb_table_stats.ibd
+index 6302a40a..55923bf7 100644
+Binary files a/mysql_data/mysql/innodb_table_stats.ibd and b/mysql_data/mysql/innodb_table_stats.ibd differ
+diff --git a/mysql_data/ojsdb/notification_settings.ibd b/mysql_data/ojsdb/notification_settings.ibd
+index 2047ea4e..435445ef 100644
+Binary files a/mysql_data/ojsdb/notification_settings.ibd and b/mysql_data/ojsdb/notification_settings.ibd differ
+diff --git a/mysql_data/ojsdb/notifications.ibd b/mysql_data/ojsdb/notifications.ibd
+index 63f074b8..10d28f2c 100644
+Binary files a/mysql_data/ojsdb/notifications.ibd and b/mysql_data/ojsdb/notifications.ibd differ
+diff --git a/mysql_data/ojsdb/scheduled_tasks.ibd b/mysql_data/ojsdb/scheduled_tasks.ibd
+index c0a48327..4b7e4fb7 100644
+Binary files a/mysql_data/ojsdb/scheduled_tasks.ibd and b/mysql_data/ojsdb/scheduled_tasks.ibd differ
+diff --git a/mysql_data/ojsdb/sessions.ibd b/mysql_data/ojsdb/sessions.ibd
+index 945b2f9c..91be851c 100644
+Binary files a/mysql_data/ojsdb/sessions.ibd and b/mysql_data/ojsdb/sessions.ibd differ
+diff --git a/mysql_data/ojsdb/users.ibd b/mysql_data/ojsdb/users.ibd
+index 1a090415..694eccc5 100644
+Binary files a/mysql_data/ojsdb/users.ibd and b/mysql_data/ojsdb/users.ibd differ
+diff --git a/plugins/generic/usageStats/UsageStatsPlugin.inc.php b/plugins/generic/usageStats/UsageStatsPlugin.inc.php
+index 44c4a57c..34f66216 100755
+--- a/plugins/generic/usageStats/UsageStatsPlugin.inc.php
++++ b/plugins/generic/usageStats/UsageStatsPlugin.inc.php
+@@ -755,34 +755,27 @@ class UsageStatsPlugin extends GenericPlugin {
+ 		// TODO:  bug: issues with file locking and directory creation might be related to the limitations or specific configurations of the Replit 
+ 		
+ 		// Check the plugin file directory.
+-		// $usageEventFilesPath = $this->getUsageEventLogsPath();
+-		// if (!$fileMgr->fileExists($usageEventFilesPath, 'dir')) {
+-		// 	$success = $fileMgr->mkdirtree($usageEventFilesPath);
+-		// 	if (!$success) {
+-		// 		// Files directory wrong configuration?
+-		// 		assert(false);
+-		// 		return false;
+-		// 	}
+-		// }
+-
+-		// $filePath = $usageEventFilesPath . DIRECTORY_SEPARATOR . $filename;
+-		// $fp = fopen($filePath, 'ab');
+-		// if (flock($fp, LOCK_EX)) {
+-		// 	fwrite($fp, $usageLogEntry);
+-		// 	flock($fp, LOCK_UN);
+-		// } else {
+-		// 	// Couldn't lock the file.
+-		// 	assert(false);
+-		// }
+-		// fclose($fp);
+-
+-		// Save the event in a temporary file for inspection instead
+-		$tempFile = '/tmp/usage_stats_dump.txt';
+-		$currentEvents = print_r($this->_currentUsageEvent, true);
+-		file_put_contents($tempFile, $currentEvents, FILE_APPEND);
+-
+-		// Clear the current usage event
+-		$this->_currentUsageEvent = null;
++		$usageEventFilesPath = $this->getUsageEventLogsPath();
++		
++		if (!$fileMgr->fileExists($usageEventFilesPath, 'dir')) {
++			$success = $fileMgr->mkdirtree($usageEventFilesPath);
++			if (!$success) {
++				// Files directory wrong configuration?
++				assert(false);
++				return false;
++			}
++		}
++
++		$filePath = $usageEventFilesPath . DIRECTORY_SEPARATOR . $filename;
++		$fp = fopen($filePath, 'ab');
++		if (flock($fp, LOCK_EX)) {
++			fwrite($fp, $usageLogEntry);
++			flock($fp, LOCK_UN);
++		} else {
++			// Couldn't lock the file.
++			assert(false);
++		}
++		fclose($fp);
+ 	}
+ 
+ 	/**
+diff --git a/replit.nix b/replit.nix
+index 634fe33a..bf994f35 100644
+--- a/replit.nix
++++ b/replit.nix
+@@ -1,5 +1,7 @@
+ { pkgs }: {
+ 	deps = [
++   pkgs.neovim
++   pkgs.gh
+    pkgs.php82Packages.composer
+    pkgs.nano
+    pkgs.systemd

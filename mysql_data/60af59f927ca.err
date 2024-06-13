@@ -1,0 +1,167 @@
+240613 16:34:49 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-13 16:34:49 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 1381 ...
+2024-06-13 16:34:49 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/60af59f927ca.err' (errno: 2 "No such file or directory")
+2024-06-13 16:34:50 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-13 16:34:50 0 [Note] InnoDB: Number of pools: 1
+2024-06-13 16:34:50 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-13 16:34:50 0 [Note] InnoDB: Using liburing
+2024-06-13 16:34:50 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-13 16:34:50 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-13 16:34:50 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=2496969,2496969
+2024-06-13 16:34:50 0 [Note] InnoDB: Starting final batch to recover 23 pages from redo log.
+2024-06-13 16:34:50 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-13 16:34:50 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 16:34:50 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-13 16:34:50 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-13 16:34:50 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-13 16:34:50 0 [Note] InnoDB: 10.6.10 started; log sequence number 2525263; transaction id 7780
+2024-06-13 16:34:50 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:34:50 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-13 16:34:50 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-13 16:34:50 0 [Note] Server socket created on IP: '::'.
+2024-06-13 16:34:50 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-13 16:34:50 0 [Note] InnoDB: Buffer pool(s) load completed at 240613 16:34:50
+2024-06-13 16:36:26 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
+2024-06-13 16:36:26 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-06-13 16:36:26 0 [Note] InnoDB: Starting shutdown...
+2024-06-13 16:36:26 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:36:26 0 [Note] InnoDB: Buffer pool(s) dump completed at 240613 16:36:26
+2024-06-13 16:36:27 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 16:36:27 0 [Note] InnoDB: Shutdown completed; log sequence number 2530632; transaction id 7832
+2024-06-13 16:36:27 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
+
+240613 16:36:27 mysqld_safe mysqld from pid file ./mysql_data/60af59f927ca.pid ended
+240613 16:36:56 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-13 16:36:56 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 1768 ...
+2024-06-13 16:36:56 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/60af59f927ca.err' (errno: 2 "No such file or directory")
+2024-06-13 16:36:56 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-13 16:36:56 0 [Note] InnoDB: Number of pools: 1
+2024-06-13 16:36:56 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-13 16:36:56 0 [Note] InnoDB: Using liburing
+2024-06-13 16:36:56 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-13 16:36:56 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-13 16:36:56 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-13 16:36:56 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-13 16:36:56 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-13 16:36:56 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-13 16:36:56 0 [Note] InnoDB: 10.6.10 started; log sequence number 2530632; transaction id 7833
+2024-06-13 16:36:56 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:36:56 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-13 16:36:56 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-13 16:36:56 0 [Note] Server socket created on IP: '::'.
+2024-06-13 16:36:56 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-13 16:36:57 0 [Note] InnoDB: Buffer pool(s) load completed at 240613 16:36:57
+2024-06-13 16:45:48 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
+2024-06-13 16:45:48 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-06-13 16:45:48 0 [Note] InnoDB: Starting shutdown...
+2024-06-13 16:45:48 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:45:48 0 [Note] InnoDB: Buffer pool(s) dump completed at 240613 16:45:48
+2024-06-13 16:45:48 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 16:45:48 0 [Note] InnoDB: Shutdown completed; log sequence number 2534064; transaction id 7869
+2024-06-13 16:45:48 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
+
+240613 16:45:48 mysqld_safe mysqld from pid file ./mysql_data/60af59f927ca.pid ended
+240613 16:46:53 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-13 16:46:53 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 2548 ...
+2024-06-13 16:46:53 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/60af59f927ca.err' (errno: 2 "No such file or directory")
+2024-06-13 16:46:53 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-13 16:46:53 0 [Note] InnoDB: Number of pools: 1
+2024-06-13 16:46:53 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-13 16:46:53 0 [Note] InnoDB: Using liburing
+2024-06-13 16:46:53 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-13 16:46:53 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-13 16:46:54 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-13 16:46:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-13 16:46:54 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-13 16:46:54 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-13 16:46:54 0 [Note] InnoDB: 10.6.10 started; log sequence number 2534064; transaction id 7868
+2024-06-13 16:46:54 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:46:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-13 16:46:54 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-13 16:46:54 0 [Note] Server socket created on IP: '::'.
+2024-06-13 16:46:54 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-13 16:46:54 0 [Note] InnoDB: Buffer pool(s) load completed at 240613 16:46:54
+2024-06-13 16:49:02 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
+2024-06-13 16:49:02 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-06-13 16:49:02 0 [Note] InnoDB: Starting shutdown...
+2024-06-13 16:49:02 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:49:02 0 [Note] InnoDB: Buffer pool(s) dump completed at 240613 16:49:02
+2024-06-13 16:49:02 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 16:49:02 0 [Note] InnoDB: Shutdown completed; log sequence number 2535211; transaction id 7891
+2024-06-13 16:49:02 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
+
+240613 16:49:02 mysqld_safe mysqld from pid file ./mysql_data/60af59f927ca.pid ended
+240613 16:49:04 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-13 16:49:04 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 2758 ...
+2024-06-13 16:49:04 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/60af59f927ca.err' (errno: 2 "No such file or directory")
+2024-06-13 16:49:04 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-13 16:49:04 0 [Note] InnoDB: Number of pools: 1
+2024-06-13 16:49:04 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-13 16:49:04 0 [Note] InnoDB: Using liburing
+2024-06-13 16:49:04 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-13 16:49:04 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-13 16:49:04 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-13 16:49:04 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-13 16:49:04 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-13 16:49:04 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-13 16:49:04 0 [Note] InnoDB: 10.6.10 started; log sequence number 2535211; transaction id 7892
+2024-06-13 16:49:04 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-13 16:49:04 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:49:04 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-13 16:49:04 0 [Note] Server socket created on IP: '::'.
+2024-06-13 16:49:04 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-13 16:49:04 0 [Note] InnoDB: Buffer pool(s) load completed at 240613 16:49:04
+2024-06-13 16:51:57 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
+2024-06-13 16:51:57 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-06-13 16:51:57 0 [Note] InnoDB: Starting shutdown...
+2024-06-13 16:51:57 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 16:51:57 0 [Note] InnoDB: Buffer pool(s) dump completed at 240613 16:51:57
+2024-06-13 16:51:58 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 16:51:58 0 [Note] InnoDB: Shutdown completed; log sequence number 2538438; transaction id 7929
+2024-06-13 16:51:58 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
+
+240613 16:51:58 mysqld_safe mysqld from pid file ./mysql_data/60af59f927ca.pid ended
+240613 16:52:03 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+240613 17:03:31 mysqld_safe Starting mariadbd daemon with databases from ./mysql_data
+2024-06-13 17:03:31 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (server 10.6.10-MariaDB) starting as process 4553 ...
+2024-06-13 17:03:31 0 [Warning] Could not increase number of max_open_files to more than 20971 (request: 32188)
+/nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Can't create file './mysql_data/60af59f927ca.err' (errno: 2 "No such file or directory")
+2024-06-13 17:03:31 0 [Note] InnoDB: Compressed tables use zlib 1.2.13
+2024-06-13 17:03:31 0 [Note] InnoDB: Number of pools: 1
+2024-06-13 17:03:31 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+2024-06-13 17:03:31 0 [Note] InnoDB: Using liburing
+2024-06-13 17:03:31 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+2024-06-13 17:03:31 0 [Note] InnoDB: Completed initialization of buffer pool
+2024-06-13 17:03:31 0 [Note] InnoDB: Starting crash recovery from checkpoint LSN=2538438,2538438
+2024-06-13 17:03:32 0 [Note] InnoDB: Starting final batch to recover 30 pages from redo log.
+2024-06-13 17:03:32 0 [Note] InnoDB: 128 rollback segments are active.
+2024-06-13 17:03:32 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 17:03:32 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+2024-06-13 17:03:32 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2024-06-13 17:03:32 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+2024-06-13 17:03:32 0 [Note] InnoDB: 10.6.10 started; log sequence number 2617288; transaction id 8094
+2024-06-13 17:03:32 0 [Note] Plugin 'FEEDBACK' is disabled.
+2024-06-13 17:03:32 0 [Note] InnoDB: Loading buffer pool(s) from /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 17:03:32 0 [Note] Server socket created on IP: '0.0.0.0'.
+2024-06-13 17:03:32 0 [Note] Server socket created on IP: '::'.
+2024-06-13 17:03:32 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: ready for connections.
+Version: '10.6.10-MariaDB'  socket: '/run/mysqld/mysqld.sock'  port: 3306  MariaDB Server
+2024-06-13 17:03:32 0 [Note] InnoDB: Buffer pool(s) load completed at 240613 17:03:32
+2024-06-13 17:05:26 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd (initiated by: unknown): Normal shutdown
+2024-06-13 17:05:26 0 [Note] InnoDB: FTS optimize thread exiting.
+2024-06-13 17:05:26 0 [Note] InnoDB: Starting shutdown...
+2024-06-13 17:05:26 0 [Note] InnoDB: Dumping buffer pool(s) to /home/runner/Open-Journal-Systems/mysql_data/ib_buffer_pool
+2024-06-13 17:05:26 0 [Note] InnoDB: Buffer pool(s) dump completed at 240613 17:05:26
+2024-06-13 17:05:27 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+2024-06-13 17:05:27 0 [Note] InnoDB: Shutdown completed; log sequence number 2704706; transaction id 8187
+2024-06-13 17:05:27 0 [Note] /nix/store/83vs3hbhf61w6azvp6jkllvsmhwhikxf-mariadb-server-10.6.10/bin/mariadbd: Shutdown complete
+
+240613 17:05:27 mysqld_safe mysqld from pid file ./mysql_data/60af59f927ca.pid ended
